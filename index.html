@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Retro Doe - Responsive Portofolio</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Basic Page Needs
+================================================== -->
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<!-- Scripts -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>$('#myModal').modal()</script>
+<script src="js/formvalidation.js"></script>
+<script src="js/html5placeholder.jquery.js"></script>
+<script src="js/jquery.tweet.js"></script>
+</head>
+<body>
+<!-- Top Green Bar -->
+<div class="topline">
+</div>
+<!-- Top Green Bar Ends-->
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</a>
+			<div class="nav-collapse collapse">
+				<!-- Menu Links
+			================================================== -->
+				<!-- Left menu links -->
+				<ul class="nav leftmenu">
+					
+					<li><a href="index.html">Inicio</a></li>
+				</ul>
+				<!-- Right menu links -->
+				<ul class="nav rightmenu">
+					<li><a href="about.html">¿Que es la corrupcion?</a></li>
+				</ul>
+				<!-- End Menu Links
+			================================================== -->
+				<!-- Pop up form (activated on "hire me" click)-->
+				<div id="myModal" class="modal hide fade hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+						<h3 id="myModalLabel">Dudas y sugerencias</h3>
+					</div>
+					<div class="modal-body">
+						<div class="done">
+							<div class="alert alert-success">
+								<button type="button" class="close" data-dismiss="alert">x</button>
+								<strong>Message sent successfully!</strong><br/>
+							</div>
+						</div>
+						<div class="form">
+							<form method="post" action="process.php" id="contactform">
+								<table>
+								<tbody>
+								<tr class="element">
+									<td class="noborder">
+									</td>
+									<td class="noborder">
+										<input type="text" name="name" class="text input-xlarge" placeholder="Nombre">
+									</td>
+								</tr>
+								<tr class="element">
+									<td class="noborder">
+									</td>
+									<td class="noborder">
+										<input type="text" name="email" class="text input-xlarge" placeholder="Correo electronico">
+									</td>
+								</tr>
+								<tr class="element texttop">
+									<td class="noborder">
+									</td>
+									<td class="noborder">
+										<textarea name="comment" class="text textarea input-xlarge contactarea" placeholder="Escriba..."></textarea>
+									</td>
+								</tr>
+								<tr class="element">
+									<td class="noborder">
+										 &nbsp;
+									</td>
+									<td class="noborder">
+										<input type="submit" id="submit" class="btn" value="Enviar">
+										<div class="loading">
+										</div>
+									</td>
+								</tr>
+								</tbody>
+								</table>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn" data-dismiss="modal">Salir</button>
+					</div>
+				</div>
+				<!-- End pop up content modal (activated on "hire me" click)-->
+			</div>
+			<!-- Menu Ends
+			================================================== -->
+			<!-- Logo-->
+			<a class="brand logo" href="#">Gloria<br/> Martinez</a>
+			<!-- End Logo-->
+			<!-- Hire me badge (remove if you don't need one)-->
+			<div class="hiremebadge">
+				<div class="hiremetext">
+					<a data-toggle="modal" href="#myModal">Contactame</a>
+				</div>
+			</div>
+			<!-- End Hire me badge-->
+		</div>
+	</div>
+</div>
+<!-- Container starts
+================================================== -->
+<div class="container">
+	<!-- Main hero unit for a primary marketing message or call to action -->
+	<div class="hero-unit">
+		<h1>La corrupción en México!</h1>
+		<p>
+			 El tema de la corrupcion es un tema tan complejo como delicado <i>y que en verdad urge abordar frontalmente</i> para poder lidiar con ella de manera efectiva.
+		</p>
+	</div>
+	<!--Carousel
+	================================================== -->
+	<div class="row">
+		<div class="span16">
+			<div id="myCarousel" class="carousel slide">
+				<div class="carousel-inner imglist">
+					<!-- Remove imglist word if you don't want gray pictures-->
+					<!-- 1st item-->
+					<div class="item">
+						<img src="img/slider/ola.jpg"  width="900" height="400">
+					</div>
+					<!-- 2nd column-->
+					<div class="item active">
+						<img src="img/slider/corrupcion.jpg" width="900" height="400">
+					</div>
+					<!-- 3rd item-->
+					<div class="item">
+						<img src="img/slider/ok.jpg" width="900" height="400">
+						
+					</div>
+				</div>
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- 3 columns under carousel 
+	================================================== -->
+	<div class="row">
+		<!-- 1 column-->
+		<div class="span-one-third">
+			<h3>Filtran nuevo video en escándalo de corrupción en México</h3>
+			<p>
+				En el video se ve a David León, quien era jefe de protección civil, entregando una bolsa con dinero a Píoio López Obrador, hermano del mandatario de México
+			</p>
+			<p>
+				<a class="btn" href="https://www.diariolasamericas.com/america-latina/filtran-nuevo-video-escandalo-corrupcion-mexico-n4205577">Ver mas...</a>
+			</p>
+		</div>
+		<!-- 2nd column-->
+		<div class="span-one-third">
+			<h3>Aquí Entre Dos… ¿Ya se terminó la corrupción en México?</h3>
+			<p>
+				Aquí entre dos, escuchamos diariamente por las mañanas al Presidente Andrés Manuel López Obrador hablar de la necesidad de enfrentar la corrupción y acabar con ella. Según él, la corrupción está sucumbiendo, que en su gobierno todo funciona correctamente, que ya no es el tiempo de antes.
+			</p>
+			<p>
+				<a class="btn" href="https://www.vanguardiaveracruz.mx/aqui-entre-dos-ya-se-termino-la-corrupcion-en-mexico/">Ver mas...</a>
+			</p>
+		</div>
+		<!-- 3rd column-->
+		<div class="span-one-third">
+			<h3>
+				OPINIÓN | México y la corrupción
+			</h3>
+			<p>
+				La corrupción en México es legendaria y ancestral. La frustración y la rabia de la sociedad mexicana ante ella, también. En parte a esa frustración y rabia se debe la victoria de Andrés Manuel López Obrador en 2018..
+			</p>
+			<p>
+				<a class="btn" href="https://cnnespanol.cnn.com/2020/09/01/opinion-mexico-y-la-corrupcion/">Ver mas...</a>
+			</p>
+		</div>
+	</div>
+	<!-- Footer 
+================================================== -->
+	<div class="footerli">
+	</div>
+	<div class="tweetarea">
+		<div class="tweettext">
+			<div class="row">
+				<div class="span-one-third">
+					<i>Si no peleas para acabar con la corrupción y la podredumbre, acabarás formando parte de ella. ...</i>
+				</div>
+				<div class="span-one-third">
+					<div class="centermargin">
+						<div class="facebook">
+							<a href="#"></a>
+						</div>
+						<div class="twitter">
+							<a href="#"></a>
+						</div>
+						<div class="google">
+							<a href="#"></a>
+						</div>
+						<div class="flickr">
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+				<div class="span-one-third center">
+					 ¿Quieres hablar sobre la corrupcion? <br/>Contactame<br/>
+					<span class="small"><a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=GTvVlcSDbthrCmhmmXkhVLgtpWQJZWZmvMgzbDJSlDLbRFXNWXNKjWPJcHCCXGqQqRWVVbhgwXQKm">gloriamtz196@gmail.com</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer center">
+		 &copy; Gloria Guadalupe Martinez Lopez.<br/>
+		 Tehuacan Puebla, CBTIS 229.
+	</div>
+</div>
+<!-- Ended Container-->
+<div class="footerend">
+</div>
+</body>
+</html>
